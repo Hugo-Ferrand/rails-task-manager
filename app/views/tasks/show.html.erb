@@ -1,0 +1,9 @@
+<br>
+<p><%= @task.details %></p>
+<p>
+  <%= '☐ this task is not completed' if @task.completed == false %>
+  <%= 'x this task is completed' if @task.completed == true %>
+</p>
+<%= link_to "Back to list", tasks_path() %>
+|
+<%= link_to "Edit this task", edit_task_path %>
